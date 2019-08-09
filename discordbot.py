@@ -13,7 +13,7 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def Hey(ctx):
-    await ctx.send('おう')
+    await ctx.send('Yes')
 
 
 bot.run(token)
