@@ -12,9 +12,7 @@ async def on_command_error(ctx, error):
     await ctx.send(str(error))
 
 @bot.command()
-async def na(ctx):
-    await ctx.send('おう')
-async def hey(ctx):
-    await ctx.send('なんや！！！')
-
+async def test(ctx, arg):
+    await ctx.send(arg)
+    
 bot.run(token)
