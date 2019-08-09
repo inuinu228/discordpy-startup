@@ -24,7 +24,7 @@ async def oum(ctx, arg):
 
 @bot.command()
 async def kakezan(ctx, a: float, b: float):
-    await ctx.send(a*b)
+    await ctx.send(round(a*b))
     
 @bot.command()
 async def edpi(ctx, a: float, b: float):
