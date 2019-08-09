@@ -13,13 +13,9 @@ async def on_command_error(ctx, error):
 
 @bot.event
 async def on_message(message):
-    # 「おはよう」で始まるか調べる
     if message.content.startswith("なあゆうどう"):
-        # 送り主がBotだった場合反応したくないので
         if client.user != message.author:
-            # メッセージを書きます
             m = "おう"
-            # メッセージが送られてきたチャンネルへメッセージを送ります
             await message.channel.send(m)
     
 bot.run(token)
