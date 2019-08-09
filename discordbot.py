@@ -11,7 +11,7 @@ async def on_command_error(ctx, error):
     await ctx.send(str(error))
 
 
-@client.event
+@.event
 async def on_message(message):
     # 「おはよう」で始まるか調べる
     if message.content.startswith("なあゆうどう"):
