@@ -11,7 +11,23 @@ async def on_command_error(ctx, error):
     await ctx.send(str(error))
     
 @bot.command()
-async def test(ctx, arg):
+async def oum(ctx, arg):
     await ctx.send(arg)
+    
+@bot.command()
+async def add(ctx, a: int, b: int):
+    await ctx.send(a+b)
+
+@bot.command()
+async def multiply(ctx, a: int, b: int):
+    await ctx.send(a*b)
+
+@bot.command()
+async def greet(ctx):
+    await ctx.send(":smiley: :wave: Hello, there!")
+
+@bot.cmmands()
+async def takayama(ctx):
+    await ctx.send(":yama2: :wari:")
 
 bot.run(token)
