@@ -20,6 +20,7 @@ async def kakezan(ctx, a: int, b: int):
     
 @bot.command()
 async def edpi(ctx, a: float, b: float):
-    await ctx.send('お前のEDPIは,round(a*b),や')
+    c = a*b:
+    await ctx.send('お前のEDPIは%cや')
     
 bot.run(token)
