@@ -17,5 +17,9 @@ async def na(ctx):
 @bot.command()
 async def edpi(ctx, a: float, b: float):
     await ctx.send('お前のEDPIは %d や \n わかったか？' % (round(a*b)))
+    
+@bot.command()
+async def furimuki(ctx, c: float, d: float):
+    await ctx.send(2.54*180/(c*0.55550*d))
      
 bot.run(token)
