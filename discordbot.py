@@ -1,10 +1,7 @@
-from discord.ext 
-import discord
-import commands
+from discord.ext import commands
 import os
 import traceback
 
-client = discord.Client()
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
@@ -16,6 +13,5 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def na(ctx):
     await ctx.send('おう')
-    
-client.run(token)    
+
 bot.run(token)
