@@ -14,20 +14,4 @@ async def on_command_error(ctx, error):
 async def oum(ctx, arg):
     await ctx.send(arg)
     
-@bot.command()
-async def add(ctx, a: int, b: int):
-    await ctx.send(a+b)
-
-@bot.command()
-async def edpi(ctx, a: int, b: int):
-    await ctx.send("お前のEDPIはa*bや")
-
-@bot.command()
-async def greet(ctx):
-    await ctx.send(":smiley: :wave: Hello, there!")
-
-@bot.cmmands()
-async def takayama(ctx):
-    await ctx.send(":yama2: :wari:")
-
 bot.run(token)
