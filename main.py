@@ -1,15 +1,17 @@
 import discord
 
 client = discord.Client()
+bot = commands.Bot(command_prefix='/')
+token = os.environ['DISCORD_BOT_TOKEN']
 
-@client.event
+@bot.event
 async def on_ready():
     print('Logged in as')
     print(client.user.name)
     print(client.user.id)
     print('------')
 
-@client.event
+@bot.event
 async def on_message(message):
     # 「おはよう」で始まるか調べる
     if message.content.startswith("おはよう"):
@@ -20,4 +22,4 @@ async def on_message(message):
             # メッセージが送られてきたチャンネルへメッセージを送ります
             await message.channel.send(m)
 
-client.run("token")
+bot.run(token)
