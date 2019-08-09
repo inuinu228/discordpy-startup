@@ -11,6 +11,14 @@ async def on_command_error(ctx, error):
     await ctx.send(str(error))
     
 @bot.command()
+async def na(ctx):
+    await ctx.send('おう')
+    
+@bot.command()
+async def hey(ctx):
+    await ctx.send('なんや！！！')
+    
+@bot.command()
 async def oum(ctx, arg):
     await ctx.send(arg)
 
@@ -20,7 +28,6 @@ async def kakezan(ctx, a: int, b: int):
     
 @bot.command()
 async def edpi(ctx, a: float, b: float):
-    c = a*b
-    await ctx.send('お前のEDPIは%cや')
+    await ctx.send('a*b')
     
 bot.run(token)
