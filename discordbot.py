@@ -34,7 +34,6 @@ async def edpi(ctx, a: float, b: float):
 async def on_message(message):
     if message.content.startswith("なあゆうどう"):
         if client.user != message.author:
-            m = "おう"
-            await message.channel.send(m)
+            await ctx.send('おう')
             
 bot.run(token)
