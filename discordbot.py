@@ -13,5 +13,9 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def oum(ctx, arg):
     await ctx.send(arg)
+
+@bot.command()
+async def multiply(ctx, a: int, b: int):
+    await ctx.send(a*b)
     
 bot.run(token)
