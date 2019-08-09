@@ -15,6 +15,10 @@ async def na(ctx):
     await ctx.send('おう')
     
 @bot.command()
+async def ayamare(ctx):
+    await ctx.send('全部俺がわり')
+    
+@bot.command()
 async def edpi(ctx, a: float, b: float):
     await ctx.send('お前のEDPIは %d や \n わかったか？' % (round(a*b)))
     
