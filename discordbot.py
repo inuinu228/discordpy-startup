@@ -11,10 +11,6 @@ async def on_command_error(ctx, error):
     await ctx.send(str(error))
     
 @bot.command()
-async def hey(ctx):
-    await ctx.send('なんや！！！')
-    
-@bot.command()
 async def oum(ctx, arg):
     await ctx.send(arg)
 
