@@ -5,19 +5,9 @@ import discord
 
 
 bot = commands.Bot(command_prefix='/')
-client = discord.Client()
 token = os.environ['DISCORD_BOT_TOKEN']
 
 @bot.event
-async def on_command_error(ctx, error):
-    await ctx.send(str(error))
-
-
-@bot.command()
-async def na(ctx):
-    await ctx.send('おう')
-
-@client.event
 async def on_message(message):
     # 「おはよう」で始まるか調べる
     if message.content.startswith("おはよう"):
@@ -27,5 +17,10 @@ async def on_message(message):
             m = "おはようございます" + message.author.name + "さん！"
             # メッセージが送られてきたチャンネルへメッセージを送ります
             await message.channel.send(m)
+
+
+@bot.command()
+async def na(ctx):
+    await ctx.send('おう')
 
 bot.run(token)
