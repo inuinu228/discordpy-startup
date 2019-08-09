@@ -23,7 +23,7 @@ async def oum(ctx, arg):
     await ctx.send(arg)
 
 @bot.command()
-async def kakezan(ctx, a: int, b: int):
+async def kakezan(ctx, a: float, b: float):
     await ctx.send(a*b)
     
 @bot.command()
