@@ -19,7 +19,7 @@ async def edpi(ctx, a: float, b: float):
     await ctx.send('お前のEDPIは %d や \n わかったか？' % (round(a*b)))
     
 @bot.command()
-async def zenshu(ctx, a: float, b: float):
-    await ctx.send('お前の全周は %d cmや \n わかったか？' % (2.54 * 360 / (a * 0.55550 * b))
+async def furimuki(ctx, a: float, b: float):
+    await ctx.send('お前の振り向きは %d cmや \n わかったか？' % (2.54*180/(a*0.55550*b))
     
 bot.run(token)
