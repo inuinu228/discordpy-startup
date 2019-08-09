@@ -12,8 +12,16 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-async def Hey(ctx):
+async def なあゆうどう(ctx):
     await ctx.send('おう')
-
+    
+@bot.command()
+async def おい(ctx):
+    await ctx.send('なんや！！！')
+    
+@bot.command()
+async def あやまれ(ctx):
+    await ctx.send('ごめんな')
+      await ctx.send('全部俺がわり')
 
 bot.run(token)
