@@ -19,8 +19,8 @@ async def add(ctx, a: int, b: int):
     await ctx.send(a+b)
 
 @bot.command()
-async def multiply(ctx, a: int, b: int):
-    await ctx.send(a*b)
+async def edpi(ctx, a: int, b: int):
+    await ctx.send("お前のEDPIはa*bや")
 
 @bot.command()
 async def greet(ctx):
