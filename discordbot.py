@@ -10,9 +10,9 @@ token = os.environ['DISCORD_BOT_TOKEN']
 @bot.event
 async def on_command_error(ctx, error):
     await ctx.send(str(error))
-
-@bot.command()
-async def test(ctx, arg):
-    await ctx.send(arg)
     
+@bot.command()
+async def hey(ctx):
+    await ctx.send('なんや！！！')
+
 bot.run(token)
