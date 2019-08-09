@@ -10,6 +10,12 @@ token = os.environ['DISCORD_BOT_TOKEN']
 async def on_command_error(ctx, error):
     await ctx.send(str(error))
     
+@bot.event
+async def on_message(message):
+    if message.content.startswith("なあゆうどう"):
+        if client.user != message.author:
+            await ctx.send('おう')
+    
 @bot.command()
 async def na(ctx):
     await ctx.send('おう')
@@ -29,11 +35,5 @@ async def kakezan(ctx, a: float, b: float):
 @bot.command()
 async def edpi(ctx, a: float, b: float):
     await ctx.send('お前のEDPIは %d や' % (round(a*b)))
-    
-@bot.command()
-async def on_message(message):
-    if message.content.startswith("なあゆうどう"):
-        if client.user != message.author:
-            await ctx.send('おう')
             
 bot.run(token)
