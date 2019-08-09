@@ -15,7 +15,11 @@ async def oum(ctx, arg):
     await ctx.send(arg)
 
 @bot.command()
-async def edpi(ctx, a: int, b: int):
+async def kakezan(ctx, a: int, b: int):
+    await ctx.send(a*b)
+    
+@bot.command()
+async def edpi(ctx, a: float, b: float):
     await ctx.send(a*b)
     
 bot.run(token)
