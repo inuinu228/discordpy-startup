@@ -30,4 +30,10 @@ async def kakezan(ctx, a: float, b: float):
 async def edpi(ctx, a: float, b: float):
     await ctx.send('お前のEDPIは %d や' % (round(a*b)))
     
+@client.event
+async def on_message(message):
+  if message.author != client.user:
+    msg = message.author.mention + ""
+    await client.send_message(message.channel, msg)
+    
 bot.run(token)
