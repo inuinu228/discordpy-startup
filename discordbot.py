@@ -12,7 +12,7 @@ async def on_command_error(ctx, error):
 
 
 @bot.command()
-async def なあゆうどう？(ctx):
+async def Hey(ctx):
     await ctx.send('おう')
 
 
