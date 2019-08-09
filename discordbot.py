@@ -3,8 +3,15 @@ import os
 import traceback
 import discord
 
+client = discord.Client()
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
+
+@client.event
+async def on_message(message):
+  if message.author != client.user:
+    msg = message.author.mention + " Hi."
+    await client.send_message(message.channel, msg)
 
 @bot.event
 async def on_command_error(ctx, error):
