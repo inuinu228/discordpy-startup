@@ -15,7 +15,7 @@ async def oum(ctx, arg):
     await ctx.send(arg)
 
 @bot.command()
-async def multiply(ctx, a: int, b: int):
-    await ctx.send(a*b)
+async def edpi(ctx, a: int, b: int):
+    await ctx.send("お前のEDPIはa*bや")
     
 bot.run(token)
