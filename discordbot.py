@@ -2,6 +2,7 @@ from discord.ext import commands
 import os
 import traceback
 import discord
+import random
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
@@ -26,6 +27,12 @@ async def edpi(ctx, a: float, b: float):
 @bot.command()
 async def furimuki(ctx, c: float, d: float):
     await ctx.send('お前の振り向きは %.1f cmや \n わかったか？' % (round(2.54*180/(c*0.55550*d),1)))
+    
+@bot.command()
+async def dice(ctx, saikoro: int, saikoro_choice: int);
+       saikoro = [1,2,3,4,5,6]
+       saikoro_choice = random.choice(saikoro)
+            await ctx.send(saikoro_choice)
     
 @bot.command()
 async def list(ctx):
