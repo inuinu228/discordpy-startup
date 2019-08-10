@@ -37,7 +37,6 @@ async def help(ctx):
     embed = discord.Embed(title="Yudo bot", description="上野裕道の脳みそを搭載したロボット", color=0xeee657)
 
     embed.add_field(name="/na", value="俺が同意してやるぞ", inline=False)
-    embed.add_field(name="/hey",　value="俺が返事してやるぞ", inline=False)
     embed.add_field(name="/ayamare", value="俺が謝ってやるぞ", inline=False)
     embed.add_field(name="/edpi", value="DPIと感度を教えると俺がEDPIを計算してやるぞ", inline=False)
     embed.add_field(name="/furimuki", value="DPIと感度を教えると俺が振り向きを測ってやるぞ", inline=False)
