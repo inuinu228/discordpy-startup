@@ -29,7 +29,7 @@ async def furimuki(ctx, c: float, d: float):
     
 @bot.command()
 async def list(ctx):
-    await ctx.senc('na 俺が同意するぞ')
+    await ctx.send('na 俺が同意するぞ')
             
 bot.run(token)    
 client.run(token) 
