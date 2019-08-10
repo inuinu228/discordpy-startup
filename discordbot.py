@@ -42,7 +42,7 @@ async def help(ctx):
 
     embed.add_field(name="/na", value="俺が同意してやるぞ", inline=False)
     embed.add_field(name="/ayamare", value="俺が謝ってやるぞ", inline=False)
-    mbed.add_field(name="/hey", value="俺があいさつ返してやるぞ", inline=False)
+    embed.add_field(name="/hey", value="俺があいさつ返してやるぞ", inline=False)
     embed.add_field(name="/edpi", value="DPIと感度を教えると俺がEDPIを計算してやるぞ", inline=False)
     embed.add_field(name="/furimuki", value="DPIと感度を教えると俺が振り向きを測ってやるぞ", inline=False)
     embed.add_field(name="/help", value="俺がどんなことするか教えてやるぞ", inline=False)
