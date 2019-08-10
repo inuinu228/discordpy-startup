@@ -32,7 +32,7 @@ bot.remove_command('help')
 
 @bot.command()
 async def help(ctx):
-    embed = discord.Embed(title="Yudo bot", description="上野裕道の脳みそを搭載したロボット:", color=0xeee657)
+    embed = discord.Embed(title="Yudo bot", description="上野裕道の脳みそを搭載したロボット", color=0xeee657)
 
     embed.add_field(name="/na", value="俺が同意してやるぞ", inline=False)
     embed.add_field(name="/ayamare", value="俺が謝ってやるぞ", inline=False)
