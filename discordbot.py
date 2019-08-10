@@ -28,9 +28,19 @@ async def edpi(ctx, a: float, b: float):
 async def furimuki(ctx, c: float, d: float):
     await ctx.send('お前の振り向きは %.1f cmや \n わかったか？' % (round(2.54*180/(c*0.55550*d),1)))
     
+bot.remove_command('help')
+
 @bot.command()
-async def list(ctx):
-    await ctx.send('/na 俺が同意するぞ \n /ayamare 俺が謝るぞ \n /edpi DPIと感度を教えると俺がEDPIを計算するぞ \n /furimuki DPIと感度を教えると俺が振り向きを測るぞ')
+async def help(ctx):
+    embed = discord.Embed(title="Yudo bot", description="上野裕道の脳みそを搭載したロボット:", color=0xeee657)
+
+    embed.add_field(name="/na", value="俺が同意してやるぞ", inline=False)
+    embed.add_field(name="/ayamare", value="俺が謝ってやるぞ", inline=False)
+    embed.add_field(name="/edpi", value="DPIと感度を教えると俺がEDPIを計算してやるぞ", inline=False)
+    embed.add_field(name="/furimuki", value="DPIと感度を教えると俺が振り向きを測ってやるぞ", inline=False)
+    embed.add_field(name="/help", value="俺がどんなことするか教えてやるぞ", inline=False)
+
+    await ctx.send(embed=embed)
             
 bot.run(token)    
 client.run(token) 
