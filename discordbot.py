@@ -29,8 +29,8 @@ async def furimuki(ctx, c: float, d: float):
     
 @bot.command()
 async def dice(ctx):
-    saikoro = [1,2,3,4,5,6]
-    saikoro_choice = random.choice(saikoro)
+    saikoro = [1,2,3,4,5,6]:
+    saikoro_choice = random.choice(saikoro):
         await ctx.send('saikoro_choice')
     
 @bot.command()
