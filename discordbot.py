@@ -29,7 +29,7 @@ async def furimuki(ctx, c: float, d: float):
     
 @bot.command()
 async def list(ctx):
-    await ctx.send('na 俺が同意するぞ')
+    await ctx.send('/na 俺が同意するぞ \n /ayamare 俺が謝るぞ \n /edpi DPIと感度を教えると俺がEDPIを計算するぞ \n /furimuki DPIと感度を教えると俺が振り向きを測るぞ')
             
 bot.run(token)    
 client.run(token) 
