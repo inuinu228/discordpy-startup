@@ -12,11 +12,11 @@ client = discord.Client()
 async def on_command_error(ctx, error):
     await ctx.send(str(error))
     
-@bot.command()
+@bot.command(name="なあ")
 async def na(ctx):
     await ctx.send('おう')
     
-@bot.command()
+@bot.command(name="謝れ")
 async def ayamare(ctx):
     await ctx.send('全部俺がわり')
     
@@ -24,7 +24,7 @@ async def ayamare(ctx):
 async def edpi(ctx, a: float, b: float):
     await ctx.send('お前のEDPIは %d や \n わかったか？' % (round(a*b)))
     
-@bot.command()
+@bot.command(name="振り向き")
 async def furimuki(ctx, c: float, d: float):
     await ctx.send('お前の振り向きは %.1f cmや \n わかったか？' % (round(2.54*180/(c*0.55550*d),1)))
     
