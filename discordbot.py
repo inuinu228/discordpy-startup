@@ -26,9 +26,5 @@ async def edpi(ctx, a: float, b: float):
 @bot.command()
 async def furimuki(ctx, c: float, d: float):
     await ctx.send('お前の振り向きは %.1f cmや \n わかったか？' % (round(2.54*180/(c*0.55550*d),1)))
-    
-@bot.command()
-async def help(ctx):
-    await ctx.send('na 俺が同意するぞ \n ayamare 俺が謝るぞ \n edpi 俺がお前のEDPIを教えるぞ \n furimuki 俺がお前の振り向きを教えるぞ')
-     
+         
 bot.run(token)
