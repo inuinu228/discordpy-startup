@@ -12,7 +12,7 @@ async def on_command_error(ctx, error):
     await ctx.send(str(error))
     
 @bot.command()
-async def なあ(ctx):
+async def na(ctx):
     await ctx.send('おう')
     
 @bot.command()
