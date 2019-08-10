@@ -29,9 +29,6 @@ async def furimuki(ctx, c: float, d: float):
     
 @bot.command()
 async def help(ctx):
-    await ctx.send('na 俺が同意するぞ \n
-                    ayamare 俺が謝るぞ \n
-                    edpi 俺がお前のEDPIを教えるぞ \n
-                    furimuki 俺がお前の振り向きを教えるぞ')
+    await ctx.send('na 俺が同意するぞ \n ayamare 俺が謝るぞ \n edpi 俺がお前のEDPIを教えるぞ \n furimuki 俺がお前の振り向きを教えるぞ')
      
 bot.run(token)
