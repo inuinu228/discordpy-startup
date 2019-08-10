@@ -28,10 +28,10 @@ async def furimuki(ctx, c: float, d: float):
     await ctx.send('お前の振り向きは %.1f cmや \n わかったか？' % (round(2.54*180/(c*0.55550*d),1)))
     
 @bot.command()
-async def dice(ctx, ramdom: int, m: int):
+async def dice(ctx):
             num_random = random.randrange(1,6)
             m = str(num_random)
-            await client.send(m)
+            await client.send_message(message.channel, m)
             
 bot.run(token)    
 client.run(token) 
