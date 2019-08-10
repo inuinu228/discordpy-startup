@@ -14,49 +14,6 @@ client = discord.Client()
 async def on_command_error(ctx, error):
     await ctx.send(str(error))
     
- @bot.command()
-async def join(ctx):
-        if message.author.voice_channel is None:
-            await client.send_message(message.channel ,'ボイスチャンネルに参加してからコマンドを打て')
-            return
-        if voice == None:
-            # ボイスチャンネルIDが未指定なら
-            if discord_voice_channel_id == 'チャンネル１':
-                voice = await client.join_voice_channel(message.author.voice_channel)
-            # ボイスチャンネルIDが指定されていたら
-            else:
-                voice = await client.join_voice_channel(client.get_channel(discord_voice_channel_id))
-        # 接続済みか確認
-        elif(voice.is_connected() == True):
-            # 再生中の場合は一度停止
-            if(player.is_playing()):
-                player.stop()
-            # ボイスチャンネルIDが未指定なら
-            if discord_voice_channel_id == '':
-                await voice.move_to(message.author.voice_channel)
-            # ボイスチャンネルIDが指定されていたら
-            else:
-                await voice.move_to(client.get_channel(discord_voice_channel_id))
-        # youtubeからダウンロードし、再生
-        player = await voice.create_ytdl_player(youtube_url)
-        player.start()
-        return
-    
- @bot.command()
-async def stop(ctx):
-        if(player.is_playing()):
-                player.stop()
-                return
-    
-    
- @bot.command()
-async def stop(ctx):
-        if voice is not None:
-            await voice.disconnect()
-            voice = None
-            return
-
-    
 @bot.command()
 async def na(ctx):
     await ctx.send('おう')
