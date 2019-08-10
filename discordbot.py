@@ -3,15 +3,18 @@ import os
 import traceback
 import discord
 
-bot = discord.Client()
+client = discord.Client()
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
-@bot.event
-async def on_command_error(ctx, error):
-    await ctx.send(str(error))
+@client.event
+async def on_ready():
+    print('Logged in as')
+    print(client.user.name)
+    print(client.user.id)
+    print('------')
     
-@bot.event    
+ @client.event
 async def on_message(message):
     # 「やあ」というチャットが来た場合のメッセージ
     if message.content.startswith("やあ"):
@@ -19,6 +22,12 @@ async def on_message(message):
         if client.user != message.author:
             message = "やあ、" + message.author.name
             await client.send_message(message.channel, message)
+            
+client.run(token)
+
+@bot.event
+async def on_command_error(ctx, error):
+    await ctx.send(str(error))
     
 @bot.command()
 async def na(ctx):
