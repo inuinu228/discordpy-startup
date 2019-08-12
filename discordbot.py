@@ -8,8 +8,7 @@ bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 discord_voice_channel_id = 'チャンネル１'
 youtube_url = 'https://www.youtube.com/watch?v=t9KON71nlqw'
-bangohan = ['ラーメン','カレー','牛丼']
-bangohan_choice = random.choice(bangohan)
+saikoro = random.randint(1, 6)
 client = discord.Client()
 
 @bot.event
@@ -29,8 +28,8 @@ async def hey(ctx):
     await ctx.send('なんや！！！')
     
 @bot.command()
-async def food(ctx):
-    await ctx.send(bangohan_choice)
+async def dice(ctx):
+    await ctx.send(saikoro)
     
 @bot.command()
 async def edpi(ctx, a: float, b: float):
