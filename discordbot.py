@@ -29,7 +29,7 @@ async def hey(ctx):
     
 @bot.command()
 async def dice(ctx):
-    await ctx.send(saikoro)
+    await ctx.send(range(1,7))
     
 @bot.command()
 async def edpi(ctx, a: float, b: float):
