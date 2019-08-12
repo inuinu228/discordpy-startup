@@ -7,7 +7,7 @@ import random
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 discord_voice_channel_id = 'チャンネル１'
-youtube_url = 'https://www.youtube.com/watch?v=QBP8imm03Mo'
+youtube_url = 'https://www.youtube.com/watch?v=t9KON71nlqw'
 saikoro = range(1,7)
 client = discord.Client()
 
@@ -28,8 +28,8 @@ async def hey(ctx):
     await ctx.send('なんや！！！')
     
 @bot.command()
-async def dice(ctx):
-    await ctx.send(range(1,7))
+async def youtube(ctx):
+    await ctx.send(youtube_url)
     
 @bot.command()
 async def edpi(ctx, a: float, b: float):
