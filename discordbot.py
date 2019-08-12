@@ -8,7 +8,8 @@ bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 discord_voice_channel_id = 'チャンネル１'
 youtube_url = 'https://www.youtube.com/watch?v=QBP8imm03Mo'
-saikoro_choice = random.choice(1,2,3,4,5,6)
+saikoro = [1,2,3,4,5,6]
+saikoro_choice = random.choice(saikoro)
 client = discord.Client()
 
 @bot.event
