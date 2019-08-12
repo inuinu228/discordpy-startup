@@ -8,8 +8,7 @@ bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 discord_voice_channel_id = 'チャンネル１'
 youtube_url = 'https://www.youtube.com/watch?v=QBP8imm03Mo'
-saikoro = [1,2,3,4,5,6]
-saikoro_choice = random.choice(saikoro)
+saikoro_choice = random.choice(1,2,3,4,5,6)
 client = discord.Client()
 
 @bot.event
@@ -49,6 +48,7 @@ async def help(ctx):
     embed.add_field(name="/na", value="俺が同意してやるぞ", inline=False)
     embed.add_field(name="/ayamare", value="俺が謝ってやるぞ", inline=False)
     embed.add_field(name="/hey", value="俺があいさつ返してやるぞ", inline=False)
+    embed.add_field(name="/dice", value="サイコロを振ってやるぞ。5しか出ないぞ", inline=False)
     embed.add_field(name="/edpi", value="DPIと感度を教えると俺がEDPIを計算してやるぞ", inline=False)
     embed.add_field(name="/furimuki", value="DPIと感度を教えると俺が振り向きを測ってやるぞ", inline=False)
     embed.add_field(name="/help", value="俺がどんなことするか教えてやるぞ", inline=False)
