@@ -55,7 +55,7 @@ async def help(ctx):
     
 @bot.command()
 async def takayama(ctx):
-    embed = discord.Embed(title="高山", description="a.k.a 駆け出しチクニー少年", color=0xeee657)
+    embed = discord.Embed(title="高山", description="a.k.a 駆け出しチクニー少年", color=0x00ff00)
 
     embed.add_field(name="MOUSE", value="Logicool G502h", inline=False)
     embed.add_field(name="DPI", value="1000", inline=False)
@@ -73,7 +73,7 @@ async def takayama(ctx):
     
 @bot.command()
 async def tokimatsu(ctx):
-    embed = discord.Embed(title="時松", description="a.k.a 駆け出しアナニー少年 more...", color=0xeee657)
+    embed = discord.Embed(title="時松", description="a.k.a 駆け出しアナニー少年 more...", color=0xFF00FF)
 
     embed.add_field(name="MOUSE", value="Logicool G402", inline=False)
     embed.add_field(name="DPI", value="1600", inline=False)
@@ -109,7 +109,7 @@ async def ushi(ctx):
     
 @bot.command()
 async def haruki(ctx):
-    embed = discord.Embed(title="興梠", description="https://www.vill.nishimera.lg.jp/", color=0xee0000)
+    embed = discord.Embed(title="興梠", description="https://www.vill.nishimera.lg.jp/", color=0x800080)
 
     embed.add_field(name="MOUSE", value="Steelseries Rival", inline=False)
     embed.add_field(name="DPI", value="?", inline=False)
