@@ -8,6 +8,8 @@ bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 discord_voice_channel_id = 'チャンネル１'
 youtube_url = 'https://www.youtube.com/watch?v=QBP8imm03Mo'
+saikoro = [1,2,3,4,5,6]
+saikoro_choice = random.choice(saikoro)
 client = discord.Client()
 
 @bot.event
@@ -25,6 +27,10 @@ async def ayamare(ctx):
 @bot.command()
 async def hey(ctx):
     await ctx.send('なんや！！！')
+    
+@bot.command()
+async def dice(ctx):
+    await ctx.send(saikoro_choice)
     
 @bot.command()
 async def edpi(ctx, a: float, b: float):
@@ -50,11 +56,20 @@ async def help(ctx):
     await ctx.send(embed=embed)
     
 @bot.command()
-async def test(ctx):
-    embed = discord.Embed(title="TEST", description="TEST", color=0xeee657)
+async def takayama(ctx):
+    embed = discord.Embed(title="高山", description="a.k.a 駆け出しチクニー少年", color=0xeee657)
 
-    embed.add_field(name="TEST", value="THIS IS TEST.", inline=False)
-    embed.add_field(name="TEST2", value="TESTING PROFILE PROG.", inline=False)
+    embed.add_field(name="MOUSE", value="LOGICOOL G502", inline=False)
+    embed.add_field(name="DPI", value="1000", inline=False)
+    embed.add_field(name="Mouse Sensitivity X", value="0.112", inline=False)
+    embed.add_field(name="Mouse Sensitivity Y", value="0.112", inline=False)
+    embed.add_field(name="Mouse Targeting Sensitivity", value="0.450", inline=False)
+    embed.add_field(name="Mouse Scope Sensitivity", value="0.700", inline=False)
+    embed.add_field(name="Monitor", value="Acer KG251QIbmiipx 24.5", inline=False)
+    embed.add_field(name="GPU", value="GTX 1070", inline=False)
+    embed.add_field(name="Mousepad", value="Steelseries Qck Heavy", inline=False)
+    embed.add_field(name="Keyboard", value="HyperX Alloy FPS Pro", inline=False)
+    embed.add_field(name="Headset", value="Steelseries Arctis5 2017", inline=False)
     
     await ctx.send(embed=embed)
 
