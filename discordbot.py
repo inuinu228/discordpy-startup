@@ -89,7 +89,41 @@ async def tokimatsu(ctx):
     
     await ctx.send(embed=embed)
     
+@bot.command()
+async def ushi(ctx):
+    embed = discord.Embed(title="牛島", description="880-0122 宮崎県宮崎市塩路1334−3", color=0x0000ee)
 
+    embed.add_field(name="MOUSE", value="Logicool G403", inline=False)
+    embed.add_field(name="DPI", value="1600", inline=False)
+    embed.add_field(name="Mouse Sensitivity X", value="0.03", inline=False)
+    embed.add_field(name="Mouse Sensitivity Y", value="0.03", inline=False)
+    embed.add_field(name="Mouse Targeting Sensitivity", value="?", inline=False)
+    embed.add_field(name="Mouse Scope Sensitivity", value="?", inline=False)
+    embed.add_field(name="Monitor", value="BenQ Zowie XL2546 24.5 240hz", inline=False)
+    embed.add_field(name="GPU", value="GTX 1660Ti", inline=False)
+    embed.add_field(name="Mousepad", value="FANTECH M80 mouse pad", inline=False)
+    embed.add_field(name="Keyboard", value="NPET K10", inline=False)
+    embed.add_field(name="Headset", value="SADES Diablo", inline=False)
+    
+    await ctx.send(embed=embed)
+    
+@bot.command()
+async def haruki(ctx):
+    embed = discord.Embed(title="興梠", description="https://www.vill.nishimera.lg.jp/", color=0xee0000)
+
+    embed.add_field(name="MOUSE", value="Steelseries Rival", inline=False)
+    embed.add_field(name="DPI", value="?", inline=False)
+    embed.add_field(name="Mouse Sensitivity X", value="0.150", inline=False)
+    embed.add_field(name="Mouse Sensitivity Y", value="0.150", inline=False)
+    embed.add_field(name="Mouse Targeting Sensitivity", value="?", inline=False)
+    embed.add_field(name="Mouse Scope Sensitivity", value="?", inline=False)
+    embed.add_field(name="Monitor", value="ViewSonic VX3276-2K-MHD-7 60hz", inline=False)
+    embed.add_field(name="GPU", value="GTX 1070", inline=False)
+    embed.add_field(name="Mousepad", value="Learntech PUBG Big pro gaming mouse pad", inline=False)
+    embed.add_field(name="Keyboard", value="Lantoo GamingKeyboard Lefthand", inline=False)
+    embed.add_field(name="Headset", value="?", inline=False)
+    
+    await ctx.send(embed=embed)
             
 bot.run(token)    
 client.run(token) 
