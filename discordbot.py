@@ -118,7 +118,7 @@ async def haruki(ctx):
     embed.add_field(name="Mouse Sensitivity Y", value="0.150", inline=False)
     embed.add_field(name="Mouse Targeting Sensitivity", value="?", inline=False)
     embed.add_field(name="Mouse Scope Sensitivity", value="?", inline=False)
-    embed.add_field(name="Monitor", value="ViewSonic VX3276-2K-MHD-7", inline=False)
+    embed.add_field(name="Monitor", value="ViewSonic VX3276-2K-MHD-7 60hz", inline=False)
     embed.add_field(name="GPU", value="GTX 1070", inline=False)
     embed.add_field(name="Mousepad", value="Learntech PUBG 超大型プロゲームマウスパッド", inline=False)
     embed.add_field(name="Keyboard", value="Lantoo ゲーミングキーボード 片手", inline=False)
