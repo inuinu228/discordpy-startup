@@ -92,7 +92,7 @@ async def tokimatsu(ctx):
     
 @bot.command()
 async def ushi(ctx):
-    embed = discord.Embed(title="牛島", description="〒880-0122 宮崎県宮崎市塩路1334−3", color=0xeee657)
+    embed = discord.Embed(title="牛島", description="〒880-0122 宮崎県宮崎市塩路1334−3", color=0x0000ee)
 
     embed.add_field(name="MOUSE", value="Logicool G403", inline=False)
     embed.add_field(name="DPI", value="1600", inline=False)
@@ -109,8 +109,8 @@ async def ushi(ctx):
     await ctx.send(embed=embed)
     
     @bot.command()
-async def haruki(ctx):
-    embed = discord.Embed(title="興梠", description="https://www.vill.nishimera.lg.jp/", color=0xeee657)
+    async def haruki(ctx):
+    embed = discord.Embed(title="興梠", description="https://www.vill.nishimera.lg.jp/", color=0xee0000)
 
     embed.add_field(name="MOUSE", value="Steelseries Rival", inline=False)
     embed.add_field(name="DPI", value="?", inline=False)
