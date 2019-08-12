@@ -48,6 +48,16 @@ async def help(ctx):
     embed.add_field(name="/help", value="俺がどんなことするか教えてやるぞ", inline=False)
 
     await ctx.send(embed=embed)
+    
+@bot.command()
+async def test(ctx):
+    embed = discord.Embed(title="TEST", description="TEST", color=0xeee657)
+
+    embed.add_field(name="TEST", value="THIS IS TEST.", inline=False)
+    embed.add_field(name="TEST2", value="TESTING PROFILE PROG.", inline=False)
+    
+    await ctx.send(embed=embed)
+
             
 bot.run(token)    
 client.run(token) 
