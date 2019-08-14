@@ -125,6 +125,25 @@ async def haruki(ctx):
     
     await ctx.send(embed=embed)
     
+@bot.command()
+async def shibata(ctx):
+    embed = discord.Embed(title="柴田", description="0985-22-3302 宮崎市下北方町役田745-11", color=0xbc8f8f)
+
+    embed.add_field(name="MOUSE", description="つよいやつ", inline=False)
+    embed.add_field(name="DPI", description="たくさん", inline=False)
+    embed.add_field(name="Mouse Sensitivity X", description="たかい", inline=False)
+    embed.add_field(name="Mouse Sensitivity Y", description="たかい", inline=False)
+    embed.add_field(name="Mouse Targeting Sensitivity", description="ひくい", inline=False)
+    embed.add_field(name="Mouse Scope Sensitivity", description="ひくい", inline=False)
+    embed.add_field(name="Monitor", description="すごいやつ", inline=False)
+    embed.add_field(name="GPU", description="やばいやつ", inline=False)
+    embed.add_field(name="Mousepad", description="すべるやつ", inline=False)
+    embed.add_field(name="Keyboard", description="ひかるやつ", inline=False)
+    embed.add_field(name="Headset", description="きこえる", inline=False)
+    
+    await ctx.send(embed=embed)
+            
+    
 
 bot.run(token)    
 client.run(token) 
