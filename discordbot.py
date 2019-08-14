@@ -129,17 +129,17 @@ async def haruki(ctx):
 async def shibata(ctx):
     embed = discord.Embed(title="柴田", description="0985-22-3302 宮崎市下北方町役田745-11", color=0xbc8f8f)
 
-    embed.add_field(name="MOUSE", description="つよいやつ", inline=False)
-    embed.add_field(name="DPI", description="たくさん", inline=False)
-    embed.add_field(name="Mouse Sensitivity X", description="たかい", inline=False)
-    embed.add_field(name="Mouse Sensitivity Y", description="たかい", inline=False)
-    embed.add_field(name="Mouse Targeting Sensitivity", description="ひくい", inline=False)
-    embed.add_field(name="Mouse Scope Sensitivity", description="ひくい", inline=False)
-    embed.add_field(name="Monitor", description="すごいやつ", inline=False)
-    embed.add_field(name="GPU", description="やばいやつ", inline=False)
-    embed.add_field(name="Mousepad", description="すべるやつ", inline=False)
-    embed.add_field(name="Keyboard", description="ひかるやつ", inline=False)
-    embed.add_field(name="Headset", description="きこえる", inline=False)
+    embed.add_field(name="MOUSE", value="つよいやつ", inline=False)
+    embed.add_field(name="DPI", value="たくさん", inline=False)
+    embed.add_field(name="Mouse Sensitivity X", value="たかい", inline=False)
+    embed.add_field(name="Mouse Sensitivity Y", value="たかい", inline=False)
+    embed.add_field(name="Mouse Targeting Sensitivity", value="ひくい", inline=False)
+    embed.add_field(name="Mouse Scope Sensitivity", value="ひくい", inline=False)
+    embed.add_field(name="Monitor", value="すごいやつ", inline=False)
+    embed.add_field(name="GPU", value="やばいやつ", inline=False)
+    embed.add_field(name="Mousepad", value="すべるやつ", inline=False)
+    embed.add_field(name="Keyboard", value="ひかるやつ", inline=False)
+    embed.add_field(name="Headset", value="きこえる", inline=False)
     
     await ctx.send(embed=embed)
             
