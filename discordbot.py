@@ -27,6 +27,10 @@ async def hey(ctx):
     await ctx.send('なんや！！！')
     
 @bot.command()
+async def shine(ctx):
+    await ctx.send('しね')
+    
+@bot.command()
 async def edpi(ctx, a: float, b: float):
     await ctx.send('お前のEDPIは %d や \n わかったか？' % (round(a*b)))
     
