@@ -127,7 +127,7 @@ async def haruki(ctx):
     
  @bot.command()
 async def shibata(ctx):
-    embed = discord.Embed(title="柴田", description="0985-22-3302 宮崎市下北方町役田745-11", color=0x800080)
+    embed = discord.Embed(title="柴田", description="0985-22-3302 宮崎市下北方町役田745-11", color=0xbc8f8f)
 
     embed.add_field(name="MOUSE", value="つよいやつ", inline=False)
     embed.add_field(name="DPI", value="たくさん", inline=False)
