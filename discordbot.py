@@ -125,7 +125,7 @@ async def haruki(ctx):
     embed.add_field(name="GPU", value="GTX 1070", inline=False)
     embed.add_field(name="Mousepad", value="Learntech PUBG Big pro gaming mouse pad", inline=False)
     embed.add_field(name="Keyboard", value="Lantoo GamingKeyboard Lefthand", inline=False)
-    embed.add_field(name="Headset", value="?", inline=False)
+    embed.add_field(name="Headset", value="きこえる", inline=False)
     
     await ctx.send(embed=embed)
     
