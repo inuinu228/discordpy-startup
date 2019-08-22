@@ -56,6 +56,7 @@ async def help(ctx):
     embed.add_field(name="/edpi", value="DPIと感度を教えると俺がEDPIを計算してやるぞ", inline=False)
     embed.add_field(name="/furimuki", value="DPIと感度を教えると俺が振り向きを測ってやるぞ", inline=False)
     embed.add_field(name="/zoomfurimuki", value="DPIと感度とズーム感度を教えると俺がズーム時の振り向きを測ってやるぞ", inline=False)
+    embed.add_field(name="/convert", value="振り向きを教えると俺がApexでの適正振り向きを教えるぞ", inline=False)
     embed.add_field(name="/takayama", value="高山の情報を教えるぞ", inline=False)
     embed.add_field(name="/tokimatsu", value="時松の情報を教えるぞ", inline=False)
     embed.add_field(name="/ushi", value="牛島の情報を教えるぞ", inline=False)
