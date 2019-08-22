@@ -45,7 +45,7 @@ async def pi(ctx):
 
 @bot.command()
 async def test(ctx, a: float):
-    await ctx.send('%.f' % a)
+    await ctx.send('%f' % a)
         
 bot.remove_command('help')
 
