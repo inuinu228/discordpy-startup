@@ -1,15 +1,11 @@
-from discord.ext import commands
+from discord.ext import commands import math
 import os
 import traceback
 import discord
 import random
-import math
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
-discord_voice_channel_id = 'チャンネル１'
-youtube_url = 'https://www.youtube.com/watch?v=t9KON71nlqw'
-client = discord.Client()
 
 @bot.event
 async def on_command_error(ctx, error):
