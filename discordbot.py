@@ -38,10 +38,6 @@ async def edpi(ctx, a: float, b: float):
 async def furimuki(ctx, c: float, d: float):
     await ctx.send('お前の振り向きは %.1f cmや \n わかったか？' % (round(2.54*180/(c*0.55550*d),1)))
     
-@bot.command()
-async def zoomfurimuki(ctx, c: float, d: float e: float):
-    await ctx.send('お前の振り向きは %.1f cmや \n わかったか？' % (round(2.54*180/(c*d*e*0.55550),1)))
-    
 bot.remove_command('help')
 
 @bot.command()
@@ -59,7 +55,6 @@ async def help(ctx):
     embed.add_field(name="/tokimatsu", value="時松の情報を教えるぞ", inline=False)
     embed.add_field(name="/ushi", value="牛島の情報を教えるぞ", inline=False)
     embed.add_field(name="/haruki", value="はるきの情報を教えるぞ", inline=False)
-    embed.add_field(name="/shibata", value="わからんかった。ごめんな", inline=False)
     embed.add_field(name="/help", value="俺がどんなことするか教えてやるぞ", inline=False)
 
     await ctx.send(embed=embed)
