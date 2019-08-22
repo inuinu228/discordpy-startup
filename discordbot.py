@@ -3,6 +3,7 @@ import os
 import traceback
 import discord
 import random
+import math
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
@@ -44,7 +45,7 @@ async def zoomfurimuki(ctx, c: float, d: float, e: float):
 
 @bot.command()
 async def Convert(ctx, g: float):
-    await ctx.send('%f cm' % g * tan(80 / 2 / 180 * PI) / tan(106 / 2 / 180 * PI)
+    await ctx.send('%f cm' % g * math.tan(80 / 2 / 180 * math.PI) / math.tan(106 / 2 / 180 * math.PI)
     
 bot.remove_command('help')
 
