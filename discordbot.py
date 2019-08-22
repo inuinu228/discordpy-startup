@@ -59,6 +59,7 @@ async def help(ctx):
     embed.add_field(name="/tokimatsu", value="時松の情報を教えるぞ", inline=False)
     embed.add_field(name="/ushi", value="牛島の情報を教えるぞ", inline=False)
     embed.add_field(name="/haruki", value="はるきの情報を教えるぞ", inline=False)
+    embed.add_field(name="/shibata", value="ごめんな", inline=False)
     embed.add_field(name="/help", value="俺がどんなことするか教えてやるぞ", inline=False)
 
     await ctx.send(embed=embed)
