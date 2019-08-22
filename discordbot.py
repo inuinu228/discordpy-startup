@@ -44,7 +44,7 @@ async def zoomfurimuki(ctx, c: float, d: float, e: float):
 
 @bot.command()
 async def Convert(ctx, g: float):
-    await ctx.send('%.f cm' % g * tan(80 / 2 / 180 * PI) / tan(106 / 2 / 180 * PI)
+    await ctx.send('%f cm' % g * tan(80 / 2 / 180 * PI) / tan(106 / 2 / 180 * PI)
     
 bot.remove_command('help')
 
