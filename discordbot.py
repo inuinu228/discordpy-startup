@@ -45,7 +45,7 @@ async def convert(ctx, a: float):
     
 @bot.command()
 async def convert2(ctx, a: float):
-    await ctx.send('%.1f' % (round(a * (0.11 / 3) * math.tan(106 / 2 / 180 * 3.141592653589793) / math.tan(80 / 2 / 180 * 3.141592653589793),1)))
+    await ctx.send('%.1f' % (a * (1 / 0.038) * math.tan(106 / 2 / 180 * 3.141592653589793) / math.tan(80 / 2 / 180 * 3.141592653589793)))
              
             
 bot.remove_command('help')
