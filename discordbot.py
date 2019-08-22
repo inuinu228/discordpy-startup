@@ -42,7 +42,10 @@ async def zoomfurimuki(ctx, c: float, d: float, e: float):
 @bot.command()
 async def convert(ctx, a: float):
     await ctx.send('Apexにフォートの感度を持っていきたいときは振り向きを %.1f cm にするといいぞ' % (round(a * math.tan(80 / 2 / 180 * 3.141592653589793) / math.tan(106 / 2 / 180 * 3.141592653589793),1)))
-        
+
+@bot.command()
+async def convert2(ctx, a: float):
+    await ctx.send('%f' % a * 3.0 / 0.11 * math.tan(106 / 2) / math.tan(80 / 2))
 bot.remove_command('help')
 
 @bot.command()
