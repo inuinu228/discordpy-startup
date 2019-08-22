@@ -45,7 +45,7 @@ async def pi(ctx):
 
 @bot.command()
 async def convert(ctx, g: float):
-    await ctx.send('%.' % g*(80/2/180*3.141592653589793)/(106/2/180*3.141592653589793))
+    await ctx.send('%.f' % g*(80/2/180*3.141592653589793)/(106/2/180*3.141592653589793))
         
 bot.remove_command('help')
 
