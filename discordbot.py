@@ -46,8 +46,8 @@ async def convert(ctx, a: float):
     
 @bot.command()
 async def convert2(ctx, a: float):
-    await ctx.send('%.1f' % (a * 3.0 / 0.11 * math.tan(106 / 2) / math.tan(80 / 2)))
-                   
+    await ctx.send('Apexにフォートの感度を持っていきたいときは振り向きを %.1f cm にするといいぞ' % (round(a * (1 / 0.04) * Math.tan(106 / 2 / 180 * Math.PI) / math.tan(80 / 2 / 180 * Math.PI),1)))
+                     
 bot.remove_command('help')
 
 @bot.command()
