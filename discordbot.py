@@ -40,7 +40,7 @@ async def zoomfurimuki(ctx, c: float, d: float, e: float):
     await ctx.send('お前の振り向きは %.1f cmや \n わかったか？' % (round(2.54*180/(c*0.55550*d*e),1)))
 
 @bot.command()
-async def 360convert(ctx, a: float, b: float, c: float):
+async def fovconvert(ctx, a: float, b: float, c: float):
     await ctx.send('振り向きを %.1f cm にするといいぞ' % (round(a * math.tan(b / 2 / 180 * 3.141592653589793) / math.tan(c / 2 / 180 * 3.141592653589793),1)))
     
 @bot.command()
@@ -61,7 +61,7 @@ async def help(ctx):
     embed.add_field(name="/edpi", value="DPIと感度を教えると俺がEDPIを計算してやるぞ", inline=False)
     embed.add_field(name="/furimuki", value="DPIと感度を教えると俺が振り向きを測ってやるぞ", inline=False)
     embed.add_field(name="/zoomfurimuki", value="DPIと感度とズーム感度を教えると俺がズーム時の振り向きを測ってやるぞ", inline=False)
-    embed.add_field(name="/convert", value="振り向き、変換前のFOV、変換後のFOVを教えると俺が適正振り向きを教えるぞ", inline=False)
+    embed.add_field(name="/fovconvert", value="振り向き、変換前のFOV、変換後のFOVを教えると俺が適正振り向きを教えるぞ", inline=False)
     embed.add_field(name="/convert", value="フォートの感度を教えると俺がApexでの適正感度を教えるぞ", inline=False)
     embed.add_field(name="/takayama", value="高山の情報を俺が教えるぞ", inline=False)
     embed.add_field(name="/tokimatsu", value="時松の情報を俺が教えるぞ", inline=False)
