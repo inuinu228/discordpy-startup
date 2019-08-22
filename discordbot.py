@@ -38,14 +38,10 @@ async def furimuki(ctx, c: float, d: float):
 @bot.command()
 async def zoomfurimuki(ctx, c: float, d: float, e: float):
     await ctx.send('お前の振り向きは %.1f cmや \n わかったか？' % (round(2.54*180/(c*0.55550*d*e),1)))
-    
-@bot.command()
-async def pi(ctx):
-    await ctx.send('math.pi')
 
 @bot.command()
 async def test(ctx, a: float):
-    await ctx.send('%f' % a)
+    await ctx.send('%f' % (round(g * (80 / 2 / 180 * 3.141592653589793) / (106 / 2 / 180 * 3.141592653589793),1))
         
 bot.remove_command('help')
 
