@@ -41,7 +41,7 @@ async def zoomfurimuki(ctx, c: float, d: float, e: float):
 
 @bot.command()
 async def test(ctx, a: float):
-    await ctx.send('%f' % (round(g * (80 / 2 / 180 * 3.141592653589793) / (106 / 2 / 180 * 3.141592653589793),1))
+    await ctx.send('%f' % (g * (80 / 2 / 180 * 3.141592653589793) / (106 / 2 / 180 * 3.141592653589793)))
         
 bot.remove_command('help')
 
