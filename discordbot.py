@@ -1,4 +1,4 @@
-from discord.ext import commands import math
+from discord.ext import commands
 import os
 import traceback
 import discord
