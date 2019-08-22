@@ -44,8 +44,8 @@ async def pi(ctx):
     await ctx.send('math.pi')
 
 @bot.command()
-async def Convert(ctx, f: float):
-    await ctx.send('%f cm' % f * math.tan(80 / 2 / 180 * math.pi) / math.tan(106 / 2 / 180 * math.pi))
+async def Convert(ctx, f: int):
+    await ctx.send('%d cm' % f * math.tan(80 / 2 / 180 * math.pi) / math.tan(106 / 2 / 180 * math.pi))
         
 bot.remove_command('help')
 
