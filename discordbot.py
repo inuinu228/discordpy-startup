@@ -44,9 +44,12 @@ async def fovconvert(ctx, a: float, b: float, c: float):
     await ctx.send('振り向きを %.1f cm にするといいぞ' % (round(a * math.tan(b / 2 / 180 * 3.141592653589793) / math.tan(c / 2 / 180 * 3.141592653589793),1)))
     
 @bot.command()
-async def convert(ctx, a: float):
+async def converttoapex(ctx, a: float):
     await ctx.send('Apexにフォートの感度を持っていきたいときは感度を %.1f にするといいぞ' % (a * (1 / 0.038) * math.tan(106 / 2 / 180 * 3.141592653589793) / math.tan(80 / 2 / 180 * 3.141592653589793)))
-             
+  
+@bot.command()
+async def converttofort(ctx, a: float):
+    await ctx.send('フォートにApexの感度を持っていきたいときは感度を %.1f にするといいぞ' % (a * (1 / 0.038) * math.tan(80 / 2 / 180 * 3.141592653589793) / math.tan(106 / 2 / 180 * 3.141592653589793)))
             
 bot.remove_command('help')
 
@@ -62,7 +65,8 @@ async def help(ctx):
     embed.add_field(name="/furimuki", value="DPIと感度を教えると俺が振り向きを測ってやるぞ", inline=False)
     embed.add_field(name="/zoomfurimuki", value="DPIと感度とズーム感度を教えると俺がズーム時の振り向きを測ってやるぞ", inline=False)
     embed.add_field(name="/fovconvert", value="振り向き、変換前のFOV、変換後のFOVを教えると俺が適正振り向きを教えるぞ", inline=False)
-    embed.add_field(name="/convert", value="フォートの感度を教えると俺がApexでの適正感度を教えるぞ", inline=False)
+    embed.add_field(name="/converttoapex", value="フォートの感度を教えると俺がApexでの適正感度を教えるぞ", inline=False)
+    embed.add_field(name="/converttofort", value="Apexの感度を教えると俺がフォートでの適正感度を教えるぞ", inline=False)
     embed.add_field(name="/takayama", value="高山の情報を俺が教えるぞ", inline=False)
     embed.add_field(name="/tokimatsu", value="時松の情報を俺が教えるぞ", inline=False)
     embed.add_field(name="/ushi", value="牛島の情報を俺が教えるぞ", inline=False)
