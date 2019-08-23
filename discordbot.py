@@ -49,7 +49,7 @@ async def converttoapex(ctx, a: float):
   
 @bot.command()
 async def converttofort(ctx, a: float):
-    await ctx.send('フォートにApexの感度を持っていきたいときは感度を %.1f にするといいぞ' % (a * (1 / 0.03) * math.tan(80 / 2 / 180 * 3.141592653589793) / math.tan(106 / 2 / 180 * 3.141592653589793)))
+    await ctx.send('フォートにApexの感度を持っていきたいときは感度を %.1f にするといいぞ' % (a * (1 / 25.97) * math.tan(80 / 2 / 180 * 3.141592653589793) / math.tan(106 / 2 / 180 * 3.141592653589793)))
             
 bot.remove_command('help')
 
