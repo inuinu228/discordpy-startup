@@ -98,15 +98,15 @@ async def takayama(ctx):
 async def tokimatsu(ctx):
     embed = discord.Embed(title="時松", description="a.k.a 駆け出しアナニー少年 more...", color=0xFF00FF)
 
-    embed.add_field(name="MOUSE", value="Logicool G402", inline=False)
+    embed.add_field(name="MOUSE", value="Logicool G502h", inline=False)
     embed.add_field(name="DPI", value="1600", inline=False)
-    embed.add_field(name="Mouse Sensitivity X", value="0.059", inline=False)
-    embed.add_field(name="Mouse Sensitivity Y", value="0.059", inline=False)
+    embed.add_field(name="Mouse Sensitivity X", value="0.05", inline=False)
+    embed.add_field(name="Mouse Sensitivity Y", value="0.05", inline=False)
     embed.add_field(name="Mouse Targeting Sensitivity", value="0.80", inline=False)
     embed.add_field(name="Mouse Scope Sensitivity", value="0.97", inline=False)
     embed.add_field(name="Monitor", value="I-O DATA GigaCrysta 24.5 240hz", inline=False)
     embed.add_field(name="GPU", value="GIGABITE RTX 2080", inline=False)
-    embed.add_field(name="Mousepad", value="Artisan Shidenkai SnowWhite", inline=False)
+    embed.add_field(name="Mousepad", value="XANOVA Phpbos M", inline=False)
     embed.add_field(name="Keyboard", value="Corsair K63 Red", inline=False)
     embed.add_field(name="Headset", value="Astro A40TR-MAP&Mix Amp 2019", inline=False)
     
