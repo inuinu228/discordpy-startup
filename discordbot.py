@@ -82,9 +82,9 @@ async def takayama(ctx):
 
     embed.add_field(name="MOUSE", value="Dream machines DM1 FPS", inline=False)
     embed.add_field(name="DPI", value="1000", inline=False)
-    embed.add_field(name="Mouse Sensitivity X", value="0.08", inline=False)
-    embed.add_field(name="Mouse Sensitivity Y", value="0.08", inline=False)
-    embed.add_field(name="Mouse Targeting Sensitivity", value="0.450", inline=False)
+    embed.add_field(name="Mouse Sensitivity X", value="0.112", inline=False)
+    embed.add_field(name="Mouse Sensitivity Y", value="0.112", inline=False)
+    embed.add_field(name="Mouse Targeting Sensitivity", value="0.321", inline=False)
     embed.add_field(name="Mouse Scope Sensitivity", value="0.450", inline=False)
     embed.add_field(name="Monitor", value="Acer KG251QIbmiipx 24.5 240hz", inline=False)
     embed.add_field(name="GPU", value="ZOTAC GEFORCE GTX 1070 MINI", inline=False)
