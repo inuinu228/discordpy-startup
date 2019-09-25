@@ -80,12 +80,12 @@ async def help(ctx):
 async def takayama(ctx):
     embed = discord.Embed(title="高山", description="USE CODE HUDDLED IN THE ITEM SHOP", color=0x00ff00)
 
-    embed.add_field(name="MOUSE", value="G402改", inline=False)
+    embed.add_field(name="MOUSE", value="G-Wolves SK-L", inline=False)
     embed.add_field(name="DPI", value="400", inline=False)
     embed.add_field(name="Mouse Sensitivity X", value="0.130", inline=False)
     embed.add_field(name="Mouse Sensitivity Y", value="0.130", inline=False)
-    embed.add_field(name="Mouse Targeting Sensitivity", value="0.450", inline=False)
-    embed.add_field(name="Mouse Scope Sensitivity", value="0.700", inline=False)
+    embed.add_field(name="Mouse Targeting Sensitivity", value="0.500", inline=False)
+    embed.add_field(name="Mouse Scope Sensitivity", value="0.500", inline=False)
     embed.add_field(name="Monitor", value="Acer KG251QIbmiipx 24.5 240hz", inline=False)
     embed.add_field(name="GPU", value="ZOTAC GEFORCE GTX 1070 MINI", inline=False)
     embed.add_field(name="Mousepad", value="Steelseries Qck Heavy", inline=False)
@@ -124,9 +124,9 @@ async def ushi(ctx):
     embed.add_field(name="Mouse Scope Sensitivity", value="0.455", inline=False)
     embed.add_field(name="Monitor", value="BenQ Zowie XL2546 24.5 240hz", inline=False)
     embed.add_field(name="GPU", value="GIGABITE GTX 1660Ti", inline=False)
-    embed.add_field(name="Mousepad", value="FANTECH M80 mouse pad", inline=False)
+    embed.add_field(name="Mousepad", value="XANOVA Phobos M", inline=False)
     embed.add_field(name="Keyboard", value="NPET K10", inline=False)
-    embed.add_field(name="Headset", value="SADES Diablo", inline=False)
+    embed.add_field(name="Headset", value="HyperX CloudX Stinger", inline=False)
     
     await ctx.send(embed=embed)
     
@@ -136,8 +136,8 @@ async def haruki(ctx):
 
     embed.add_field(name="MOUSE", value="Steelseries Rival", inline=False)
     embed.add_field(name="DPI", value="?", inline=False)
-    embed.add_field(name="Mouse Sensitivity X", value="0.150", inline=False)
-    embed.add_field(name="Mouse Sensitivity Y", value="0.150", inline=False)
+    embed.add_field(name="Mouse Sensitivity X", value="0.130", inline=False)
+    embed.add_field(name="Mouse Sensitivity Y", value="0.130", inline=False)
     embed.add_field(name="Mouse Targeting Sensitivity", value="?", inline=False)
     embed.add_field(name="Mouse Scope Sensitivity", value="?", inline=False)
     embed.add_field(name="Monitor", value="ViewSonic VX3276-2K-MHD-7 60hz", inline=False)
