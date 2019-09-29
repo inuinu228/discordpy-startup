@@ -78,7 +78,7 @@ async def help(ctx):
     
 @bot.command()
 async def takayama(ctx):
-    embed = discord.Embed(title="高山", description="USE CODE HUDDLED IN THE ITEM SHOP", color=0x00ff00)
+    embed = discord.Embed(title="高山", description="I AM MOUSE GEEK.", color=0x00ff00)
 
     embed.add_field(name="MOUSE", value="G-Wolves SK-L", inline=False)
     embed.add_field(name="DPI", value="400", inline=False)
