@@ -153,7 +153,7 @@ async def shibata(ctx):
     embed = discord.Embed(title="柴田", description="0985-22-3302 宮崎市下北方町役田745-11", color=0xbc8f8f)
 
     embed.add_field(name="MOUSE", value="Zowie EC1-B", inline=False)
-    embed.add_field(name="DPI", value="?", inline=False)
+    embed.add_field(name="DPI", value="1600", inline=False)
     embed.add_field(name="Mouse Sensitivity X", value="?", inline=False)
     embed.add_field(name="Mouse Sensitivity Y", value="?", inline=False)
     embed.add_field(name="Mouse Targeting Sensitivity", value="?", inline=False)
