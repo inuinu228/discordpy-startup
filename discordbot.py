@@ -88,7 +88,7 @@ async def takayama(ctx):
     embed.add_field(name="Mouse Scope Sensitivity", value="0.500", inline=False)
     embed.add_field(name="Monitor", value="Acer KG251QIbmiipx 24.5 240hz", inline=False)
     embed.add_field(name="GPU", value="ZOTAC GEFORCE GTX 1070 MINI", inline=False)
-    embed.add_field(name="Mousepad", value="Steelseries Qck Heavy", inline=False)
+    embed.add_field(name="Mousepad", value="Zowie G-SR", inline=False)
     embed.add_field(name="Keyboard", value="HyperX Alloy FPS Pro", inline=False)
     embed.add_field(name="Headset", value="Steelseries Arctis5 2017", inline=False)
     
@@ -106,8 +106,8 @@ async def tokimatsu(ctx):
     embed.add_field(name="Mouse Scope Sensitivity", value="0.970", inline=False)
     embed.add_field(name="Monitor", value="I-O DATA GigaCrysta 24.5 240hz", inline=False)
     embed.add_field(name="GPU", value="GIGABITE RTX 2080", inline=False)
-    embed.add_field(name="Mousepad", value="XANOVA Phpbos M", inline=False)
-    embed.add_field(name="Keyboard", value="Corsair K63 Red", inline=False)
+    embed.add_field(name="Mousepad", value="Artisan 紫電改 MID L スノーホワイト", inline=False)
+    embed.add_field(name="Keyboard", value="Corsair K65 RGB Speed", inline=False)
     embed.add_field(name="Headset", value="Astro A40TR-MAP&Mix Amp 2019", inline=False)
     
     await ctx.send(embed=embed)
