@@ -32,8 +32,12 @@ async def edpi(ctx, a: float, b: float):
     await ctx.send('お前のEDPIは %d や \n わかったか？' % (round(a*b)))
     
 @bot.command()
-async def furimuki(ctx, c: float, d: float):
+async def fortfurimuki(ctx, c: float, d: float):
     await ctx.send('お前の振り向きは %.1f cmや \n わかったか？' % (round(2.54*180/(c*0.55550*d),1)))
+    
+@bot.command()
+async def apexfurimuki(ctx, c: float, d: float):
+    await ctx.send('お前の振り向きは %.1f cmや \n わかったか？' % (round(2.54*180/(c*0.022*d),1)))
     
 @bot.command()
 async def zoomfurimuki(ctx, c: float, d: float, e: float):
@@ -62,7 +66,8 @@ async def help(ctx):
     embed.add_field(name="/hey", value="俺があいさつ返してやるぞ", inline=False)
     embed.add_field(name="/shine", value="俺が殺してやるぞ", inline=False)
     embed.add_field(name="/edpi", value="DPIと感度を教えると俺がEDPIを計算してやるぞ", inline=False)
-    embed.add_field(name="/furimuki", value="DPIと感度を教えると俺が振り向きを測ってやるぞ", inline=False)
+    embed.add_field(name="/fortfurimuki", value="DPIと感度を教えると俺がフォートナイトでの振り向きを測ってやるぞ", inline=False)
+    embed.add_field(name="/apexfurimuki", value="DPIと感度を教えると俺がApexでの振り向きを測ってやるぞ", inline=False)
     embed.add_field(name="/zoomfurimuki", value="DPIと感度とズーム感度を教えると俺がズーム時の振り向きを測ってやるぞ", inline=False)
     embed.add_field(name="/fovconvert", value="振り向き、変換前のFOV、変換後のFOVを教えると俺が適正振り向きを教えるぞ", inline=False)
     embed.add_field(name="/converttoapex", value="フォートの感度を教えると俺がApexでの適正感度を教えるぞ", inline=False)
