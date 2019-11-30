@@ -85,12 +85,12 @@ async def help(ctx):
 async def takayama(ctx):
     embed = discord.Embed(title="高山", description="I AM MOUSE GEEK.", color=0x00ff00)
 
-    embed.add_field(name="MOUSE", value="G-Wolves SK-L", inline=False)
-    embed.add_field(name="DPI", value="600", inline=False)
-    embed.add_field(name="Mouse Sensitivity X", value="0.17", inline=False)
-    embed.add_field(name="Mouse Sensitivity Y", value="0.198", inline=False)
-    embed.add_field(name="Mouse Targeting Sensitivity", value="0.450", inline=False)
-    embed.add_field(name="Mouse Scope Sensitivity", value="0.450", inline=False)
+    embed.add_field(name="MOUSE", value="G PRO Wireless", inline=False)
+    embed.add_field(name="DPI", value="800", inline=False)
+    embed.add_field(name="Mouse Sensitivity X", value="0.08", inline=False)
+    embed.add_field(name="Mouse Sensitivity Y", value="0.08", inline=False)
+    embed.add_field(name="Mouse Targeting Sensitivity", value="0.5", inline=False)
+    embed.add_field(name="Mouse Scope Sensitivity", value="0.5", inline=False)
     embed.add_field(name="Monitor", value="Acer KG251QIbmiipx 24.5 240hz", inline=False)
     embed.add_field(name="GPU", value="ZOTAC GEFORCE GTX 1070 MINI", inline=False)
     embed.add_field(name="Mousepad", value="XANOVA Phobos M", inline=False)
